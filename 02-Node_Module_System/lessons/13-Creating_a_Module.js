@@ -244,4 +244,44 @@ module.exports.log = log
 So we are  done with our logger module
 Now we need to log this module
 and use inside app.js
+
+
+logger.log('message')
+
+// and  we get 'message' on the console
+
+
+*/
+
+/**
+So this is how we work with modules in node
+We define a module,
+we export one or more members
+
+'module.exports.log = log'
+
+and then to load the module we use the 'require' function
+
+*/
+
+/**
+Now in the recent versions of javascript
+we have the ability to define constants
+So as a best practice
+by loading a module
+using the require function
+its better to store the result in constant
+the reason of this is because we dont want to accidentally
+overwrite the value of logger like this here
+
+logger = 1
+
+we set this to 1
+and we call a log method 
+we are gonna to get an exception
+
+logger.log('message?)
+
+in app.js
+
 */
